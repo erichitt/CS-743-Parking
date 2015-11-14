@@ -10,4 +10,57 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.cs743.uwmparking.MonitorParkingLotActivity">
 
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="View Individual Parking Spot Status"
+        android:id="@+id/viewIndividualParkingButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="viewParkingSpotStatusButton"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Spaces Remaining:  "
+        android:id="@+id/spaceRemainingLabel"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/viewIndividualParkingButton"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="###"
+        android:id="@+id/spaceRemainingCount"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/spaceRemainingLabel"
+        android:layout_above="@+id/viewIndividualParkingButton"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/parkingStatusFrame"
+        android:layout_above="@+id/spaceRemainingLabel">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/monitorParkingMap"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/unavailableOverlay"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/availableOverlay"/>
+
+    </FrameLayout>
 </RelativeLayout>

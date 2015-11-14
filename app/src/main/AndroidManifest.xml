@@ -33,7 +33,11 @@
         </activity>
         <activity
             android:name=".MonitorParkingLotActivity"
-            android:label="@string/activityMonitorParkingTitle">
+            android:label="@string/activityMonitorParkingTitle" >
+        </activity>
+        <activity
+            android:name=".MonitorParkingSpotStatusActivity"
+            android:label="@string/activityMonitorParkingSpotStatusTitle">
         </activity>
     </application>
 

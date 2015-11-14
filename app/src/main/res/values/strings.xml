@@ -20,6 +20,9 @@
     <!-- Monitor Parking -->
     <string name="activityMonitorParkingTitle">Monitoring Parking Lot</string>
 
+    <!-- Monitor Parking Spot Status -->
+    <string name="activityMonitorParkingSpotStatusTitle">Monitoring Parking Spots</string>
+
     <!-- Main menu -->
     <string name="tocFindParking">Find Me Parking!</string>
     <string name="tocViewParking">View Available Parking</string>
